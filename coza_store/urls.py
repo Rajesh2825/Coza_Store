@@ -19,6 +19,10 @@ from django.urls import path,include
 from django.conf import settings
 from django.conf.urls.static import static
 
+admin.site.site_header = "Coza_Store Admin"
+admin.site.site_title = "Coza_Store Admin Portal"
+admin.site.index_title = "Welcome to Coza_Store"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('shop.urls')),
